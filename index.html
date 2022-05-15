@@ -8,15 +8,18 @@
   
   <title>Frontend Mentor | Ping coming soon page</title>
 
-  <link rel="stylesheet" href="main.css">
+  <link href="https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;600;700&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/18d1d61f34.js" crossorigin="anonymous"></script>
+
+  <link rel="stylesheet" href="main.css">
+  
 </head>
 <body>
   <div class="conatainer">
     <div class="card">
       <div class="card-text">
         <img src="images/logo.svg" alt="Ping Logo" />
-        <h1>We are launching soon!</h1>
+        <h1>We are launching <span>soon!</span></h1>
         <h4>Subscribe and get notified</h4>
         <form>
           <input type="text" placeholder="Your email adress..." id="email">
@@ -24,7 +27,7 @@
         </form>
       </div>
       <div class="card-image">
-        <img src="images/illustration-dashboard.png" alt="Ping Dashboard" />
+        <img src="images/illustration-dashboard.png" alt="Ping Dashboard" id="dashboard"/>
       </div>
       <div class="card-bottom">
         <div class="social-icons">
@@ -32,18 +35,12 @@
           <i class="fab fa-twitter"></i>
           <i class="fab fa-instagram"></i>
         </div>
-        <p>&copy; Copyright Ping. All rights reserved.</p>
+        <div class="copyright">
+          <p>&copy; Copyright Ping. All rights reserved.</p>
+        </div>  
       </div>
     </div>
   </div>
-  
-
- 
-
-  
-
-  
-
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 

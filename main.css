@@ -1,5 +1,126 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 
+:root {
+    --lightblue: hsl(223, 100%, 88%);
+    --errorred: hsl(354, 100%, 66%);
+    --grey: hsl(0, 0%, 59%);
+    --darkblue: hsl(209, 33%, 12%);
+    --blue: hsl(223, 87%, 63%);
+}
 
+html {
+    font-family: 'Libre Franklin', sans-serif;
+    font-size: 20px;
+}
+
+.container {
+    max-width: 375px;
+}
+
+.card {
+    display: grid;
+    place-content: center;
+    width: 90%;
+    margin: 50px auto;
+}
+
+.card-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.card-text img {
+    width: 20%;
+    margin: 30px auto;
+}
+
+.card-text h1 {
+    font-size: 1.3em;
+    font-weight: 300;
+    color: var(--grey);
+    margin-bottom: 20px;
+}
+
+.card-text h1 span {
+    font-weight: 700;
+    color: black;
+}
+
+.card-text h4 {
+    font-weight: 600;
+    color: var(--grey);
+    font-size: 0.7em;
+    margin-bottom: 50px;
+}
+
+form {
+    width: 90%;
+}
+
+input {
+    width: 91%;
+    border-radius: 50px;
+    border: 1px solid var(--lightblue);
+    padding: 15px 10px;
+    margin: 10px auto;
+}
+
+input[type="text"]::placeholder {
+    padding-left: 15px;
+    color: var(--lightblue);
+    opacity: 60%;
+}
+
+button {
+    width: 100%;
+    border-radius: 50px;
+    padding: 15px 10px;
+    background-color: var(--blue);
+    border: none;
+    margin: 10px auto;
+    color: white;
+}
+
+#dashboard {
+    width: 100%;
+    margin: 50px auto;
+}
+
+.card-bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.copyright p {
+    font-size: 0.6em;
+    color: var(--grey);
+    margin: 20px auto;
+}
+
+.social-icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.social-icons i {
+    margin: 10px 10px;
+    color: var(--blue);
+    border: 1px solid lightgrey;
+    border-radius: 50%;
+    height: 35px;
+    width: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
 /*** Footer **/
 .attribution {
