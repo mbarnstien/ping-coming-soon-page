@@ -131,3 +131,44 @@ button {
 .attribution a { 
     color: hsl(228, 45%, 44%); 
 }
+
+@media only screen and (min-width: 1200px) {
+    .container {
+        max-width: 800px;
+        margin: 30px auto;
+    }
+
+    .card {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .card-text h1 {
+        font-size: 1.75em;
+    }
+
+    form {
+        width: 700px;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        flex-direction: row;
+    }
+
+    input {
+        width: 60%;
+        margin: 10px auto;
+    }
+    
+    button {
+        width: 30%;
+        padding: 15px 10px;
+        margin: 10px auto;
+    }
+
+    .card-bottom {
+        max-width: 300px;
+    }
+}
